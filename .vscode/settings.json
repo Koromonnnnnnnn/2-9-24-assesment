@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp"
+    }
+}
