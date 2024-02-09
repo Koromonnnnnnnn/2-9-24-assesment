@@ -1,15 +1,28 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+void returnSearch();
+
+string DiverseBeats[] = {"Tusa", "Rockstar", "Tangerine"};
+
 int main()
 {
-    string arr[] = {"yes", "no", "no", "no", "no"}, toFind = "yes", notFound = "notFound";
-    for (int i = 0; i <= sizeof(arr); i++)
+    returnSearch(); //search for binding lights
+    cout << DiverseBeats[2] << endl; //print out 3rd slot of the array
+    DiverseBeats[0] = "Save Your Tears"; //replace tusa with save your tears
+
+    for (int j = 0; j <= 3; j++) //print entire array
+        cout << DiverseBeats[j] << " ";
+}
+
+void returnSearch(){
+    string DiverseBeats[] = {"Tusa", "Rockstar", "Tangerine"}, toFind = "Binding Lights", notFound = "notFound";
+    for (int i = 0; i <= sizeof(DiverseBeats); i++)
     {
-        if (arr[i] == toFind)
+        if (DiverseBeats[i] == toFind)
         {
-            cout << "Element is found at " << i << " index" << endl;
-            return 0;
+            cout << "Song is found in slot number " << i << endl;
         }
     }
     cout << notFound << endl;
